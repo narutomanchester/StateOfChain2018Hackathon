@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout.component';
+import { TrackingComponent } from './tracking/tracking.component';
+import { TrainingComponent } from './training/training.component';
 
 const routes: Routes = [
     {
         path: '',
         component: LayoutComponent,
         children: [
-            { path: '', redirectTo: 'dashboard', pathMatch: 'prefix' },
+            { path: '', redirectTo: 'tracking', pathMatch: 'prefix' },
+            { path: 'tracking', component: TrackingComponent},
+            { path: 'training', component : TrainingComponent },
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
             { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },

@@ -1,5 +1,14 @@
 <nav class="sidebar" [ngClass]="{sidebarPushRight: isActive, collapsed: collapsed}">
     <div class="list-group">
+        <a routerLink="/tracking" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-heartbeat"></i>&nbsp;
+            <span>{{ 'Tracking' | translate }}</span>
+        </a>
+        <a routerLink="/training" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-frown-o"></i>&nbsp;
+            <span>{{ 'Training' | translate }}</span>
+        </a>
+        <!--
         <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-dashboard"></i>&nbsp;
             <span>{{ 'Dashboard' | translate }}</span>
@@ -143,6 +152,7 @@
                 </li>
             </div>
         </div>
+    -->
     </div>
     <div class="toggle-button" [ngClass]="{collapsed: collapsed}" (click)="toggleCollapsed()">
         <i class="fa fa-fw fa-angle-double-left"></i>&nbsp;
