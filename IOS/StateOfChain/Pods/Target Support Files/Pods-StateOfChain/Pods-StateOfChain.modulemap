@@ -1,0 +1,6 @@
+framework module Pods_StateOfChain {
+  umbrella header "Pods-StateOfChain-umbrella.h"
+
+  export *
+  module * { export * }
+}
