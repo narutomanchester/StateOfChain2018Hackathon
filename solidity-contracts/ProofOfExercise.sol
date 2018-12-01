@@ -77,7 +77,7 @@ contract ProofOfExercise is Token {
 
 
 
-    function getActivityById(uint256 _id) public view  {
+    function getActivityById(uint256 _id) public view returns (address, string, int, uint256, string) {
         return (activities[_id].owner, activities[_id].title, activities[_id].activity_type, activities[_id].score, activities[_id].metadataURL);
     }
 
@@ -97,9 +97,9 @@ contract ProofOfExercise is Token {
     }
 
     
-    function createChallenge(string _title, uint256 _deposit, uint256 _activity, string _bargeURL) public {
+    function createChallenge(string _title, uint256 _deposit, string _bargeURL, uint _endTime) public {
         require(_deposit > 0,"deposit has to be greater than 0");
-        require(_balances[msg.sender] > 0, "insufficient balance");
+        require(balances[msg.sender] > 0, "insufficient balance");
 
         challengeCount = challengeCount+1;
         challenges[challengeCount].owner = msg.sender;
@@ -112,16 +112,16 @@ contract ProofOfExercise is Token {
         challenges[challengeCount].bargeURL = _bargeURL;
     }
 
-    function getChallenge(uint256 _id) public view returns (address, string, uint256, string, address, bool, string) {
+    function getChallenge(uint256 _id) public view returns (address, string, uint256, address, bool, string) {
         return (challenges[_id].owner, challenges[_id].title, challenges[_id].deposit, challenges[_id].winner, challenges[_id].ended, challenges[_id].bargeURL);
     } 
 
-    function submitChallenge(uint256 challenge_id, uint256 activity_id) public {
-        challengeCount = challengeCount+1;
-        challenges[challengeCount].owner = msg.sender;
-        challenges[challengeCount].challenge_id = challenge_id;
-        challenges[challengeCount].activity_id = activity_id;
-        challenges[challengeCount].timeStamp = now;
+    function submitChallenge(uint256 _challenge_id, uint256 _activity_id) public {
+        contenderCount = contenderCount+1;
+        contenders[challengeCount].owner = msg.sender;
+        contenders[challengeCount].challenge_id = _challenge_id;
+        contenders[challengeCount].activity_id = _activity_id;
+        contenders[challengeCount].timeStamp = now;
     } 
 
     function getChallengeContender(uint256 _challenge_id) public view returns (uint256[]) {
@@ -147,12 +147,20 @@ contract ProofOfExercise is Token {
         //require(!challenges[_id].ended, "Challenge not yet ended.");
         challenges[_id].ended = true;
         uint max = contenderCount+1;
+        uint256 highestScore = 0;
+        address winner = 0x0;
         for (uint i=1; i<max;i++) {
             if (contenders[i].challenge_id == _id) {
-                
+                if (activities[contenders[i].activity_id].score > highestScore  ) {
+                    highestScore = activities[contenders[i].activity_id].score;
+                    winner = activities[contenders[i].activity_id].owner;
+                }
             }
         }
-
+        require(winner != 0x0, "no winner");
+        require(highestScore > 0, "final score has to be greater then 0 ");
+        _mint(winner,challenges[_id].deposit);
+    
     }
 
 
