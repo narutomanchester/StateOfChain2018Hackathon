@@ -24,15 +24,15 @@ class TrackingViewController: UIViewController {
     }
     
     @IBAction func invokeBtn(_ sender: Any) {
-        if let url = URL(string: "https://storage.googleapis.com/tfjs-examples/webcam-transfer-learning/dist/index.html") {
-            UIApplication.shared.open(url, options: [:])
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//        if let url = URL(string: "https://storage.googleapis.com/tfjs-examples/webcam-transfer-learning/dist/index.html") {
+//            UIApplication.shared.open(url, options: [:])
+//
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "TrackingDataViewController") as! TrackingDataViewController
                 self.present(vc, animated: false, completion: nil)
-            }
-            
-        }
+//            }
+//            
+//        }
     }
     
 

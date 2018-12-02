@@ -71,13 +71,21 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.6.0):
     - PromiseKit/CorePromise
-  - secp256k1.swift (0.1.4)
+  - Result (4.0.0)
+  - scrypt (2.0):
+    - CryptoSwift (~> 0.11)
+  - secp256k1_swift (1.0.3)
   - SipHash (1.2.2)
-  - web3swift (2.0.9):
+  - SwiftRLP (1.0.1):
     - BigInt (~> 3.1)
-    - CryptoSwift (~> 0.12)
-    - PromiseKit (~> 6.4)
-    - secp256k1.swift
+  - web3swift (1.1.10):
+    - BigInt (~> 3.1)
+    - CryptoSwift (~> 0.11)
+    - PromiseKit (~> 6.3)
+    - Result (~> 4.0)
+    - scrypt (~> 2.0)
+    - secp256k1_swift (~> 1.0.3)
+    - SwiftRLP (~> 1.0.1)
   - XJYChart (2.3.5):
     - Colours (= 5.13.0)
 
@@ -85,7 +93,7 @@ DEPENDENCIES:
   - CircleSlider
   - Firebase/Core
   - Firebase/Database
-  - web3swift (from `https://github.com/bankex/web3swift.git`)
+  - web3swift (~> 1.1.5)
   - XJYChart
 
 SPEC REPOS:
@@ -104,18 +112,13 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromiseKit
-    - secp256k1.swift
+    - Result
+    - scrypt
+    - secp256k1_swift
     - SipHash
+    - SwiftRLP
+    - web3swift
     - XJYChart
-
-EXTERNAL SOURCES:
-  web3swift:
-    :git: https://github.com/bankex/web3swift.git
-
-CHECKOUT OPTIONS:
-  web3swift:
-    :commit: 8eb4e77cfa33449d3ffa3fb90224c6dd336e6c9a
-    :git: https://github.com/bankex/web3swift.git
 
 SPEC CHECKSUMS:
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
@@ -132,11 +135,14 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   PromiseKit: c2983ba0f1eca9efc3412cc7032ce8de2fd59d06
-  secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  scrypt: 3fe5b1a3b0976f97cd87488673a8f7c65708cc84
+  secp256k1_swift: 4fc5c4b2d2c6d21ee8ccb868cdc92da12f38bed9
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
-  web3swift: 03a79623d149b980348c1cdf004803700893ca7c
+  SwiftRLP: 9de2c9512a9a6bf0909cd84cc143a7ff1aff7820
+  web3swift: 843dd5295d2ae755e6f80e9e0bdabe2868a5c7d8
   XJYChart: 38f7412be14cfdcc95f7b4b78aaa3fb96dc28a61
 
-PODFILE CHECKSUM: 324e155f983ca3f5febd6625f780268ba4295b4f
+PODFILE CHECKSUM: dddcfa1162416e528dde22925ffeccc84d87e809
 
 COCOAPODS: 1.5.3

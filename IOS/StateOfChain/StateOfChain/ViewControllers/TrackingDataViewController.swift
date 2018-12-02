@@ -15,16 +15,32 @@ class TrackingDataViewController: UIViewController {
     @IBOutlet var move1Lbl: UILabel!
     @IBOutlet var move2Lbl: UILabel!
     @IBOutlet var move3Lbl: UILabel!
+    @IBOutlet var totalMinsLbl: UILabel!
     
     var ref: DatabaseReference!
     var moveRef: DatabaseReference!
     var statusRef: DatabaseReference!
     
+    var timer : Timer?
+    var counter = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupRealtimeDatabase()
+
         setupView()
+        
+        timer = Timer.scheduledTimer(timeInterval:1, target:self, selector:#selector(prozessTimer), userInfo: nil, repeats: true)
+    }
+    
+    @objc func prozessTimer() {
+        counter += 1
+        let mins = counter / 60
+        let secs = counter % 60
+        self.totalMinsLbl.text = "\(mins):\(secs)"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setupRealtimeDatabase()
     }
     
     func setupView(){
@@ -45,10 +61,10 @@ class TrackingDataViewController: UIViewController {
             if let open_close_arms = data?["open_close_arms"] as? Int {
                 self.move1Lbl.text = "\(open_close_arms) times"
             }
-            if let up_and_open_arms = data?["up_and_open_arms"] as? Int {
+            if let up_and_open_arms = data?["diagonal"] as? Int {
                 self.move2Lbl.text = "\(up_and_open_arms) times"
             }
-            
+
             print(postDict)
         })
         
@@ -68,6 +84,8 @@ class TrackingDataViewController: UIViewController {
     }
 
     @IBAction func invokeCloseBtn(_ sender: Any) {
+        timer?.invalidate()
+        timer = nil
         self.dismiss(animated: true, completion: nil)
     }
     
