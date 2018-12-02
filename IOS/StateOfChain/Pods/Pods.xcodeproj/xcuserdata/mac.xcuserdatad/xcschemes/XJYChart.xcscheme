@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D83385C186624087B9E18E1FDE822E09"
+               BlueprintIdentifier = "2841D703FD06F54E1EEB8398DD7A6F92"
                BlueprintName = "XJYChart"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "XJYChart.framework">

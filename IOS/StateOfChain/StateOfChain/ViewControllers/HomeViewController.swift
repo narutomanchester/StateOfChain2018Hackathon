@@ -85,6 +85,8 @@ class HomeViewController: UIViewController, XJYChartDelegate {
 
     @IBAction func invokeBtn(_ sender: Any) {
         self.circleSlider1.value = 100
+        self.circleSlider2.value = 70
+        self.circleSlider3.value = 80
     }
     
 }

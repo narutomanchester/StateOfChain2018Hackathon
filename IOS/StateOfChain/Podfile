@@ -11,5 +11,5 @@ pod "CircleSlider"
 pod "XJYChart"
 pod 'Firebase/Core'
 pod 'Firebase/Database'
-pod 'web3swift', :git => 'https://github.com/bankex/web3swift.git'
+pod 'web3swift', '~> 1.1.5'
 end
