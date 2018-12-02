@@ -11,12 +11,13 @@
 		043DA16621B2D3ED006C8F80 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DA16521B2D3ED006C8F80 /* TrackingViewController.swift */; };
 		043DA16821B2F805006C8F80 /* TrackingDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DA16721B2F805006C8F80 /* TrackingDataViewController.swift */; };
 		043DA16A21B2FC7E006C8F80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043DA16921B2FC7E006C8F80 /* GoogleService-Info.plist */; };
+		043DA16D21B3359D006C8F80 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DA16C21B3359D006C8F80 /* SettingViewController.swift */; };
 		0449CE1421B2465600BF4B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449CE1321B2465600BF4B1E /* AppDelegate.swift */; };
-		0449CE1621B2465600BF4B1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449CE1521B2465600BF4B1E /* ViewController.swift */; };
 		0449CE1921B2465600BF4B1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449CE1721B2465600BF4B1E /* Main.storyboard */; };
 		0449CE1B21B2465800BF4B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0449CE1A21B2465800BF4B1E /* Assets.xcassets */; };
 		0449CE1E21B2465800BF4B1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0449CE1C21B2465800BF4B1E /* LaunchScreen.storyboard */; };
 		0449CE2621B28B5F00BF4B1E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449CE2521B28B5F00BF4B1E /* HomeViewController.swift */; };
+		04911F5021B3384200C3B076 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04911F4F21B3384200C3B076 /* Constant.swift */; };
 		E87BA0FE81332156BA93A159 /* Pods_StateOfChain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7B942EEB4C481D453F700F /* Pods_StateOfChain.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,14 +26,15 @@
 		043DA16521B2D3ED006C8F80 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		043DA16721B2F805006C8F80 /* TrackingDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingDataViewController.swift; sourceTree = "<group>"; };
 		043DA16921B2FC7E006C8F80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		043DA16C21B3359D006C8F80 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		0449CE1021B2465600BF4B1E /* StateOfChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateOfChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449CE1321B2465600BF4B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0449CE1521B2465600BF4B1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0449CE1821B2465600BF4B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0449CE1A21B2465800BF4B1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0449CE1D21B2465800BF4B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0449CE1F21B2465800BF4B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0449CE2521B28B5F00BF4B1E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		04911F4F21B3384200C3B076 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		2774654BBEBEC5E457F8BECF /* Pods-StateOfChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateOfChain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StateOfChain/Pods-StateOfChain.debug.xcconfig"; sourceTree = "<group>"; };
 		73BBF40A9DF31B95F3933F0F /* Pods-StateOfChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateOfChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-StateOfChain/Pods-StateOfChain.release.xcconfig"; sourceTree = "<group>"; };
 		DB7B942EEB4C481D453F700F /* Pods_StateOfChain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StateOfChain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +52,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043DA16B21B334CE006C8F80 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0449CE2521B28B5F00BF4B1E /* HomeViewController.swift */,
+				043DA16321B2D005006C8F80 /* ActivityViewController.swift */,
+				043DA16521B2D3ED006C8F80 /* TrackingViewController.swift */,
+				043DA16721B2F805006C8F80 /* TrackingDataViewController.swift */,
+				043DA16C21B3359D006C8F80 /* SettingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		0449CE0721B2465600BF4B1E = {
 			isa = PBXGroup;
 			children = (
@@ -72,18 +86,23 @@
 			isa = PBXGroup;
 			children = (
 				0449CE1321B2465600BF4B1E /* AppDelegate.swift */,
-				0449CE1521B2465600BF4B1E /* ViewController.swift */,
 				0449CE1721B2465600BF4B1E /* Main.storyboard */,
-				0449CE1A21B2465800BF4B1E /* Assets.xcassets */,
-				0449CE1C21B2465800BF4B1E /* LaunchScreen.storyboard */,
 				0449CE1F21B2465800BF4B1E /* Info.plist */,
-				0449CE2521B28B5F00BF4B1E /* HomeViewController.swift */,
-				043DA16321B2D005006C8F80 /* ActivityViewController.swift */,
-				043DA16521B2D3ED006C8F80 /* TrackingViewController.swift */,
-				043DA16721B2F805006C8F80 /* TrackingDataViewController.swift */,
 				043DA16921B2FC7E006C8F80 /* GoogleService-Info.plist */,
+				0449CE1C21B2465800BF4B1E /* LaunchScreen.storyboard */,
+				0449CE1A21B2465800BF4B1E /* Assets.xcassets */,
+				043DA16B21B334CE006C8F80 /* ViewControllers */,
+				04911F4E21B3382900C3B076 /* Constant */,
 			);
 			path = StateOfChain;
+			sourceTree = "<group>";
+		};
+		04911F4E21B3382900C3B076 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				04911F4F21B3384200C3B076 /* Constant.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		542135A87BBBC144EC91B670 /* Pods */ = {
@@ -180,21 +199,33 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StateOfChain/Pods-StateOfChain-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
 				"${BUILT_PRODUCTS_DIR}/CircleSlider/CircleSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/Colours/Colours.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
 				"${BUILT_PRODUCTS_DIR}/XJYChart/XJYChart.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Colours.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XJYChart.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -226,12 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04911F5021B3384200C3B076 /* Constant.swift in Sources */,
 				043DA16821B2F805006C8F80 /* TrackingDataViewController.swift in Sources */,
 				043DA16621B2D3ED006C8F80 /* TrackingViewController.swift in Sources */,
-				0449CE1621B2465600BF4B1E /* ViewController.swift in Sources */,
 				0449CE1421B2465600BF4B1E /* AppDelegate.swift in Sources */,
 				0449CE2621B28B5F00BF4B1E /* HomeViewController.swift in Sources */,
 				043DA16421B2D005006C8F80 /* ActivityViewController.swift in Sources */,
+				043DA16D21B3359D006C8F80 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
